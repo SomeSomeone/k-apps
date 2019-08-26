@@ -1,29 +1,47 @@
 <template>
   <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
+    <router-view  class="header" name="header"/>
+    <div class="body">
+      <router-view class="content" />
     </div>
-    <router-view/>
+    <router-view  class="footer" name="footer"/>
   </div>
 </template>
 
-<style lang="scss">
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
+<style>
+:root{
+  /* sizes */
+  --footer-height: 30px;
+  --header-height: 30px;
+  --body-height: calc(100vh - var(--footer-height) - var(--header-height));
+
+  /* colors */
+  --brand-color: #382980;
+  --text-color: #2B2B2A;
+  --secondary-color: #808080;
+
 }
-#nav {
-  padding: 30px;
-  a {
-    font-weight: bold;
-    color: #2c3e50;
-    &.router-link-exact-active {
-      color: #42b983;
-    }
-  }
+#app {
+  display: flex;
+  flex-direction: column;
+  height:100vh;
+}
+.header{
+  background: #FFF;
+  flex: 0 0 var(--header-height);
+}
+.footer{
+  background: #FFF;
+  flex: 0 0 var(--footer-height);
+  margin-top:auto;
+}
+.body{
+  flex: 0 0 var(--body-height);
+  height: var(--body-height);
+  overflow-y: scroll;
+}
+.content{
+  width:100%;
+  background: #FFF;
 }
 </style>
