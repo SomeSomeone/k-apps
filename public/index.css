@@ -7,3 +7,10 @@ body{
     font-family: 'IBM Plex Sans', sans-serif;
     background: orange;
 }
+.grid{
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    padding: 0 24px;
+    width: 100%;
+    box-sizing: border-box;
+}

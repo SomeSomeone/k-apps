@@ -14,6 +14,20 @@ export default new Router({
   base: process.env.BASE_URL,
   routes: [
     {
+      path: '/:goodLive',
+      name: 'home',
+      components: {
+        header: Header,
+        default: Home,
+        footer: Footer
+      },
+      props: {
+        header: false,
+        default: true,
+        footer: false
+      }
+    },
+    {
       path: '/',
       name: 'home',
       components: {

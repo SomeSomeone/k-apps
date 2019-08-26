@@ -4,10 +4,10 @@
       <img src="@/assets/logo.png" alt="ww">
     </a>
     <nav>
-      <a href="#"><img src="@/assets/icon/search.svg" alt=""></a>
-      <a class="notification" href="#"><img src="@/assets/icon/message.svg" alt=""></a>
-      <a href="#"><img src="@/assets/icon/help.svg" alt=""></a>
-      <a href="#"><img src="@/assets/icon/more.svg" alt=""></a>
+      <a href="#"><img src="img/icon/search.svg" alt=""></a>
+      <a class="notification" href="#"><img src="img/icon/message.svg" alt=""></a>
+      <a href="#"><img src="img/icon/help.svg" alt=""></a>
+      <a href="#"><img src="img/icon/more.svg" alt=""></a>
     </nav>
   </header>
 </template>
