@@ -15,19 +15,19 @@
   /* sizes */
   --footer-height: 30px;
   --header-height: 30px;
-  --body-height: calc(100vh - var(--footer-height) - var(--header-height));
-
+  --app-height: 100%;
+  --body-height: calc(var(--app-height) - var(--footer-height) - var(--header-height));
   /* colors */
   --brand-color: #382980;
   --text-color: #2B2B2A;
   --secondary-color: #808080;
-
 }
 #app {
   display: flex;
   flex-direction: column;
-  height:100vh;
+  height: var(--app-height);
 }
+
 .header{
   background: #FFF;
   flex: 0 0 var(--header-height);
@@ -38,6 +38,7 @@
   margin-top:auto;
 }
 .body{
+  background: #FFF;
   flex: 0 0 var(--body-height);
   height: var(--body-height);
   overflow-y: scroll;

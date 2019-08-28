@@ -29,4 +29,9 @@
       padding: 2ex;
     }
   }
+  @media (max-width: 360px) {
+    footer a {
+      margin: 1ex;
+    }
+  }
 </style>

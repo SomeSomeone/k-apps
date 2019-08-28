@@ -79,6 +79,7 @@
       cursor: pointer;
       user-select: none;
       transform: translateX(8px);
+      justify-self: flex-end;
     }
     a{
       --icon-bg: #F298C0;
